@@ -1,5 +1,7 @@
 import './LoginPage.scss';
 
-export const LoginPage = () => {
+function LoginPage() {
     return <div>Login Page</div>
 }
+
+export default LoginPage;
