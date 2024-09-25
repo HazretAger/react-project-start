@@ -11,24 +11,24 @@ export default function (plop) {
         actions: [
             {
                 type: "add",
-                path: "src/pages/{{name}}Page/index.ts",
-                templateFile: "plop/templates/pages/index.hbs"
+                path: "../src/pages/{{name}}Page/index.ts",
+                templateFile: "./templates/page/index.hbs"
             },
             {
                 type: "add",
-                path: "src/pages/{{name}}Page/ui/{{name}}Page.async.ts",
-                templateFile: "plop/templates/pages/page.async.hbs"
+                path: "../src/pages/{{name}}Page/ui/{{name}}Page.async.ts",
+                templateFile: "./templates/page/page.async.hbs"
             },
             {
                 type: "add",
-                path: "src/pages/{{name}}Page/ui/{{name}}Page.tsx",
-                templateFile: "plop/templates/pages/page.hbs"
+                path: "../src/pages/{{name}}Page/ui/{{name}}Page.tsx",
+                templateFile: "./templates/page/page.hbs"
             },
             {
-                type: "add",
-                path: "src/pages/{{name}}Page/ui/{{name}}Page.scss",
-                templateFile: "plop/templates/pages/page.style.hbs"
-            }
+                type: 'add',
+                path: '../src/pages/{{name}}Page/ui/{{name}}Page.module.scss',
+                templateFile: './templates/page/page.style.hbs',
+            },
         ]
     });
 };

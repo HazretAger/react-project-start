@@ -1,7 +1,10 @@
+import { Button } from '../../../shared/ui/Button';
 import './HomePage.scss';
 
 function HomePage() {
-    return <div>Home Page</div>
+    return <div>
+        <Button />
+    </div>
 }
 
 export default HomePage;
