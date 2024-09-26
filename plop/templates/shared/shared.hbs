@@ -1,0 +1,12 @@
+import classNames from 'classnames';
+import cls from './{{name}}.module.scss';
+
+interface {{name}}Props {
+    className?: string;
+    children?: React.ReactNode;
+}
+
+export const {{name}} = (props: {{name}}Props) => {
+    const { className, children } = props;
+    return <div className={classNames(cls.{{name}}, {}, [className])}>{{name}} component</div>
+}

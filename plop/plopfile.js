@@ -1,11 +1,11 @@
 export default function (plop) {
     plop.setGenerator('page', {
-        description: 'Шаблон страницы',
+        description: 'page template',
         prompts: [
             {
                 type: 'input',
                 name: 'name',
-                message: 'Название страницы:'
+                message: 'Название компонента:'
             }
         ],
         actions: [
@@ -28,6 +28,39 @@ export default function (plop) {
                 type: 'add',
                 path: '../src/pages/{{name}}Page/ui/{{name}}Page.module.scss',
                 templateFile: './templates/page/page.style.hbs',
+            },
+        ]
+    });
+
+    plop.setGenerator('shared', {
+        description: 'shared template',
+        prompts: [
+            {
+                type: 'input',
+                name: 'name',
+                message: 'Название компонента:'
+            }
+        ],
+        actions: [
+            {
+                type: "add",
+                path: "../src/shared/ui/{{name}}/index.ts",
+                templateFile: "./templates/shared/index.hbs"
+            },
+            {
+                type: "add",
+                path: "../src/shared/ui/{{name}}/{{name}}.stories.ts",
+                templateFile: "./templates/shared/shared.stories.hbs"
+            },
+            {
+                type: "add",
+                path: "../src/shared/ui/{{name}}/{{name}}.tsx",
+                templateFile: "./templates/shared/shared.hbs"
+            },
+            {
+                type: 'add',
+                path: '../src/shared/ui/{{name}}/{{name}}.module.scss',
+                templateFile: './templates/shared/shared.style.hbs',
             },
         ]
     });
