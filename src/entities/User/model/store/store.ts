@@ -1,7 +1,7 @@
 import { create } from 'zustand'
-import { IUseUserStore } from '../types/types';
+import { IUserStore } from '../types/types';
 
-export const useUserStore = create<IUseUserStore>((set) => ({
+export const useUserStore = create<IUserStore>((set) => ({
   user: null,
   setUser: (user) => set(() => ({ user })),
 }));

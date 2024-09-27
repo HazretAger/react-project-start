@@ -1,11 +1,11 @@
-export interface IUser {
+export interface I{{name}} {
     name: string;
     surname: string;
     middlename: string;
     birthdate: number;
 }
 
-export interface IUserStore {
+export interface I{{name}}Store {
     user: IUser | null;
-    setUser: (user: IUser) => void;
+    set{{name}}: (user: I{{name}}) => void;
 } 

@@ -1,0 +1,11 @@
+import classNames from 'classnames';
+import cls from './{{name}}.module.scss';
+
+interface I{{name}}Props {
+    className?: string;
+}
+
+export const {{name}} = (props: I{{name}}Props) => {
+    const { className } = props;
+    return <div className={classNames(cls.User, {}, [className])}> {{name}} entity </div>
+}

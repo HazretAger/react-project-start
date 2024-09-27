@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "plop:page": "plop page --plopfile ./plop/plopfile.js",
     "plop:shared": "plop shared --plopfile ./plop/plopfile.js",
+    "plop:entity": "plop entity --plopfile ./plop/plopfile.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

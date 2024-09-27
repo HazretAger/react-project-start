@@ -1,0 +1,7 @@
+import { create } from 'zustand'
+import { I{{name}}Store } from '../types/types';
+
+export const use{{name}}Store = create<I{{name}}Store>((set) => ({
+  user: null,
+  set{{name}}: (user) => set(() => ({ user })),
+}));

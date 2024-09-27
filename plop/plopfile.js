@@ -32,6 +32,44 @@ export default function (plop) {
         ]
     });
 
+    plop.setGenerator('entity', {
+        description: 'entity template',
+        prompts: [
+            {
+                type: 'input',
+                name: 'name',
+                message: 'Название компонента:'
+            }
+        ],
+        actions: [
+            {
+                type: "add",
+                path: "../src/entities/{{name}}/index.ts",
+                templateFile: "./templates/entity/index.hbs"
+            },
+            {
+                type: "add",
+                path: "../src/entities/{{name}}/model/store/entity.store.ts",
+                templateFile: "./templates/entity/entity.store.hbs"
+            },
+            {
+                type: "add",
+                path: "../src/entities/{{name}}/model/types/entity.types.ts",
+                templateFile: "./templates/entity/entity.type.hbs"
+            },
+            {
+                type: "add",
+                path: "../src/entities/{{name}}/ui/{{name}}.tsx",
+                templateFile: "./templates/entity/entity.hbs"
+            },
+            {
+                type: 'add',
+                path: '../src/entities/{{name}}/ui/{{name}}.module.scss',
+                templateFile: './templates/entity/entity.style.hbs',
+            },
+        ]
+    });
+
     plop.setGenerator('shared', {
         description: 'shared template',
         prompts: [
