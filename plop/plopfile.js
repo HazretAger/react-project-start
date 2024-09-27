@@ -49,12 +49,12 @@ export default function (plop) {
             },
             {
                 type: "add",
-                path: "../src/entities/{{name}}/model/store/entity.store.ts",
+                path: "../src/entities/{{name}}/model/store/store.ts",
                 templateFile: "./templates/entity/entity.store.hbs"
             },
             {
                 type: "add",
-                path: "../src/entities/{{name}}/model/types/entity.types.ts",
+                path: "../src/entities/{{name}}/model/types/types.ts",
                 templateFile: "./templates/entity/entity.type.hbs"
             },
             {

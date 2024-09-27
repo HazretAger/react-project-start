@@ -1,11 +1,11 @@
-export interface IUser {
+export interface IPost {
     name: string;
     surname: string;
     middlename: string;
     birthdate: number;
 }
 
-export interface IUserStore {
+export interface IPostStore {
     user: IUser | null;
-    setUser: (user: IUser) => void;
+    setPost: (user: IPost) => void;
 } 
