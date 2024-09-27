@@ -6,6 +6,6 @@ export interface IPost {
 }
 
 export interface IPostStore {
-    user: IUser | null;
-    setPost: (user: IPost) => void;
+    post: IPost | null;
+    setPost: (post: IPost) => void;
 } 
