@@ -7,5 +7,5 @@ interface IPostProps {
 
 export const Post = (props: IPostProps) => {
     const { className } = props;
-    return <div className={classNames(cls.User, {}, [className])}> Post entity </div>
+    return <div className={classNames(cls.Post, {}, [className])}> Post entity </div>
 }

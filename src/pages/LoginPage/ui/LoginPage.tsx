@@ -1,7 +1,14 @@
-import './LoginPage.scss';
+
+import { Form } from '../../../shared/ui/FormElements/ui/Form/Form';
+import { InputElement } from '../../../shared/ui/FormElements/ui/InputElement/InputElement';
+import cls from './LoginPage.module.scss';
 
 function LoginPage() {
-    return <div>Login Page</div>
+    return <div className={cls.LoginPage}>
+        <Form>
+            <InputElement />
+        </Form>
+    </div>
 }
 
 export default LoginPage;
