@@ -1,7 +1,6 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { LoginButton } from '../../../features/Auth';
-import { Form, InputElement } from '../../../shared/ui/FormElements';
-import { useEffect } from 'react';
+import { LoginButton } from '@/features/Auth';
+import { Form, InputElement } from '@/shared/ui/FormElements';
 import cls from './LoginForm.module.scss';
 
 type IFields = {
@@ -20,10 +19,6 @@ export const LoginForm = () => {
     const onSubmit: SubmitHandler<IFields> = (data: IFields) => {
         console.log(data, 'data here');
     };
-
-    useEffect(() => {
-        console.log(errors.password);
-    }, [errors.password]);
 
     return (
         <Form className={cls.LoginForm} onSubmit={handleSubmit(onSubmit)}>
