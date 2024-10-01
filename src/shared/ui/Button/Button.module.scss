@@ -3,8 +3,7 @@
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    width: max-content;
-    background: greenyellow;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -12,4 +11,8 @@
     font-size: 15px;
     line-height: 20px;
     color: white;
+}
+
+.primary {
+    background: greenyellow;
 }

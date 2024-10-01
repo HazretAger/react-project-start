@@ -1,0 +1,26 @@
+.Field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input {
+    border: 1px solid rgba(232, 238, 242, 1);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.error {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.isActive {
+    opacity: 1;
+    transform: scale(1);
+}

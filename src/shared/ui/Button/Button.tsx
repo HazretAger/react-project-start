@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import cls from './Button.module.scss';
 
-
 export enum ButtonType {
     PRIMARY = 'primary',
     OUTLINE = 'outline',
@@ -15,9 +14,11 @@ interface ButtonProps {
 
 export const Button = (props: ButtonProps) => {
     const { className, children, theme } = props;
-    return <button className={classNames(cls.Button, {}, [className, cls[theme]])}>
-        <div className={cls.content}>
-            <p className={cls.text}>{children}</p>
-        </div>
-    </button>
-}
+    return (
+        <button className={classNames(cls.Button, {}, [className, cls[theme]])}>
+            <div className={cls.content}>
+                <p className={cls.text}>{children}</p>
+            </div>
+        </button>
+    );
+};

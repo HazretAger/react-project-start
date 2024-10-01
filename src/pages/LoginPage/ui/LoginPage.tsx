@@ -1,13 +1,9 @@
-
-import { Form } from '../../../shared/ui/FormElements/ui/Form/Form';
-import { InputElement } from '../../../shared/ui/FormElements/ui/InputElement/InputElement';
+import { LoginForm } from '../../../widgets/LoginForm';
 import cls from './LoginPage.module.scss';
 
 function LoginPage() {
     return <div className={cls.LoginPage}>
-        <Form>
-            <InputElement />
-        </Form>
+        <LoginForm />
     </div>
 }
 
